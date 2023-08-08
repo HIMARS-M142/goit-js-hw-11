@@ -1,0 +1,51 @@
+.search-form {
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: baseline;
+  display: flex;
+  padding-top: 30px;
+}
+.form-input {
+  border-radius: 5px;
+  height: 30px;
+  padding: 0px 10px;
+}
+.gallery {
+  display: flex;
+  gap: 40px 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+.div-btn {
+  text-align: center;
+}
+
+.load-more {
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 50px;
+  background-color: #4a80d1;
+  color: white;
+}
+.load-more:hover,
+.load-more:focus {
+  background-color: darkblue;
+}
+
+.form-btn {
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 30px;
+  background-color: #4a80d1;
+  color: white;
+  margin-left: 20px;
+}
+.form-btn:hover,
+.form-btn:focus {
+  background-color: darkblue;
+}
