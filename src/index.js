@@ -65,8 +65,5 @@ function onCreateMArkup(data) {
 </div>`;
       divEl.insertAdjacentHTML('beforeend', createMarkup);
     });
-    if (data.hits.length < 40) {
-      buttonEl.hidden = true;
-    }
   }
 }
