@@ -18,7 +18,7 @@ function onFormSubmit(e) {
 }
 
 function onButtonClick(e) {
-  pixabaySearch.onPixabaySearch().then(onCreateMArkup).finally(fin);
+  pixabaySearch.onPixabaySearch().then(onCreateMArkup).finally();
 }
 
 function onCreateMArkup(data) {
@@ -67,8 +67,4 @@ function onCreateMArkup(data) {
       divEl.insertAdjacentHTML('beforeend', createMarkup);
     });
   }
-}
-
-function fin(f) {
-  return (buttonEl.hidden = false);
 }
