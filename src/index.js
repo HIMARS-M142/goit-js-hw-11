@@ -23,7 +23,7 @@ function onButtonClick(e) {
 
 function onCreateMArkup(data) {
   buttonEl.hidden = true;
-  console.log(data.hits);
+
   if (data.totalHits === 0) {
     buttonEl.hidden = true;
 
