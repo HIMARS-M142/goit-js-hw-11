@@ -23,7 +23,7 @@ function onButtonClick(e) {
 
 function onCreateMArkup(data) {
   buttonEl.hidden = true;
-
+  console.log(data.hits);
   if (data.totalHits === 0) {
     buttonEl.hidden = true;
 
@@ -34,7 +34,6 @@ function onCreateMArkup(data) {
     Notiflix.Notify.warning(
       "We're sorry, but you've reached the end of search results."
     );
-    buttonEl.hidden = true;
   } else {
     buttonEl.hidden = false;
     data.hits.map(d => {
@@ -66,5 +65,8 @@ function onCreateMArkup(data) {
 </div>`;
       divEl.insertAdjacentHTML('beforeend', createMarkup);
     });
+    if (data.hits.length < 40) {
+      buttonEl.hidden = true;
+    }
   }
 }
