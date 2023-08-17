@@ -4,6 +4,7 @@ const pixabaySearch = new PixabaySearch();
 const form = document.querySelector('.search-form');
 const buttonEl = document.querySelector('.load-more');
 const divEl = document.querySelector('.gallery');
+const formBtn = document.querySelector('.form-btn');
 buttonEl.hidden = true;
 
 form.addEventListener('submit', onFormSubmit);
@@ -11,6 +12,7 @@ buttonEl.addEventListener('click', onButtonClick);
 
 function onFormSubmit(e) {
   e.preventDefault();
+
   pixabaySearch.value = e.target.elements.searchQuery.value;
   pixabaySearch.resetPage();
   divEl.innerHTML = '';
